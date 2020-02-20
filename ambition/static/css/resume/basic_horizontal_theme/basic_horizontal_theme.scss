@@ -1,0 +1,84 @@
+.resume
+{
+    .r-header
+    {
+        display: flex;
+        margin-bottom: 2rem;
+
+        .info
+        {
+            h1
+            {
+                color: #375265;
+                letter-spacing: 0.3rem;
+                text-align: center;
+                font-weight: 700;
+                font-size: 36px;
+            }
+
+            .r-contact
+            {
+                font-size: 13px;
+                color: #aaa;
+                ul
+                {
+                    display: flex;
+                    list-style: '| ';
+                    padding-inline-start: 10px;
+
+                    li
+                    {
+                        margin-left: 0.5rem;
+                    }
+                }
+                address
+                {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+    h4
+    {
+        color: #375265;
+        letter-spacing: 0.1rem;
+        text-align: end;
+        min-width: 20%;
+        max-width: 20%;
+        margin-right: 2rem;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h5
+    {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .r-professional-summary,.r-work-history,.r-education,.r-skills
+    {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .r-skills
+    {
+        ul 
+        {
+            column-count: 2;
+        }
+    }
+    .work-info,.education-info
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p,address
+        {
+            font-size: 13px;
+            color: #aaa;
+        }
+    }
+}

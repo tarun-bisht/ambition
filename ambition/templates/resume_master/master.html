@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta name="description" content="Ambition Build Better Opportunities by creating better Resume Free">
+    <meta name="keywords" content="Create Resume Better Opportunities Free Resume Match Resume ATS Demo">
+    <meta name="author" content="Tarun Bisht">
+    <title>Ambition</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/editor/editor.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/theme/resume.min.css') }}">
+    {% block style %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('routes.index') }}">Ambition</a>
+        <div>
+            <button class="button" id="print">Print</button>
+            <button class="button" id="download">HTML</button>
+        </div>
+    </nav>
+    <div id="toolbar">
+        <div action="undo"><img src="{{ url_for('static',filename='icons/undo-24px.svg') }}" alt="undo"></div>
+        <div action="redo"><img src="{{ url_for('static',filename='icons/redo-24px.svg') }}" alt="redo"></div>
+        <div action="bold"><img src="{{ url_for('static',filename='icons/format_bold-24px.svg') }}" alt="bold"></div>
+        <div action="italic"><img src="{{ url_for('static',filename='icons/format_italic-24px.svg') }}" alt="italic"></div>
+        <div action="underline"><img src="{{ url_for('static',filename='icons/format_underlined-24px.svg') }}" alt="underline"></div>
+        <div action="justifyLeft"><img src="{{ url_for('static',filename='icons/format_align_left-24px.svg') }}" alt="align-left"></div>
+        <div action="justifyCenter"><img src="{{ url_for('static',filename='icons/format_align_justify-24px.svg') }}" alt="align-center"></div>
+        <div action="justifyRight"><img src="{{ url_for('static',filename='icons/format_align_right-24px.svg') }}" alt="align-right"></div>
+        <div action="foreColor"><img src="{{ url_for('static',filename='icons/text_format-24px.svg') }}" alt="text-color"></div>
+        <div action="backColor"><img src="{{ url_for('static',filename='icons/color_lens-24px.svg') }}" alt="background-color"></div>
+        <div action="insertOrderedList"><img src="{{ url_for('static',filename='icons/format_list_numbered-24px.svg') }}" alt="insert numbered list"></div>
+        <div action="insertUnorderedList"><img src="{{ url_for('static',filename='icons/format_list_bulleted-24px.svg') }}" alt="insert bulleted list"></div>
+        <div action="textSize"><img src="{{ url_for('static',filename='icons/format_size-24px.svg') }}" alt="text-size"></div>
+        <div action="createLink"><img src="{{ url_for('static',filename='icons/link-24px.svg') }}" alt="add-link"></div>
+        <div action="unlink"><img src="{{ url_for('static',filename='icons/link_off-24px.svg') }}" alt="remove-link"></div>
+        <div action="subscript"><img src="{{ url_for('static',filename='icons/subscript-24px.svg') }}" alt="subscript"></div>
+        <div action="superscript"><img src="{{ url_for('static',filename='icons/superscript-24px.svg') }}" alt="superscript"></div>
+        <div action="strikeThrough"><img src="{{ url_for('static',filename='icons/format_strikethrough-24px.svg') }}" alt="strike-through"></div>
+    </div>
+    <div class="resume-container" id="resume-container">
+        {% block resume %}{% endblock %}
+    </div>
+    <footer>
+        <p>
+            &copy; 2020 Tarun Bisht, Ambition | <a href="https://www.patreon.com/tarunbisht">Support</a>
+        </p>
+    </footer>
+    <script defer src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script defer src="{{ url_for('static',filename='js/editor.js') }}"> </script>
+    <script defer src="{{ url_for('static',filename='js/resume.js') }}"> </script>
+</body>
+</html>

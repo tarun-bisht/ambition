@@ -1,0 +1,50 @@
+{% extends "/resume_master/master.html" %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/resume/basic_theme/basic_theme.min.css') }}">
+{% endblock style %}
+{% block resume %}
+<div class="resume" id="resume">
+    <h1 placeholder="Your Name"></h1>
+    <hr></hr>
+    <div class="r-contact">
+        <ul>
+            <li><address>123 Main Street,India 262501</address></li>
+            <li>xxxxxxx912</li>
+            <li>demo@gmail.com</li>
+        </ul>
+    </div>
+    <div>
+        <h4>Professional Summary</h4>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque molestiae sequi adipisci corrupti facere nisi at facilis dolore quos.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quis asperiores nemo deserunt placeat explicabo sint aspernatur a dolorem? Laboriosam!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium ad officia! Nostrum sapiente omnis minima amet error, rem explicabo quia tempore iure, facere sit porro. Eius debitis voluptatem provident.</li>
+        </ul>
+    </div>
+    <div>
+        <h4 class="new-element">Skills</h4>
+        <div>
+            <h5>Communication</h5>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque molestiae sequi adipisci corrupti facere nisi at facilis dolore quos.</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quis asperiores nemo deserunt placeat explicabo sint aspernatur a dolorem? Laboriosam!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium ad officia! Nostrum sapiente omnis minima amet error, rem explicabo quia tempore iure, facere sit porro. Eius debitis voluptatem provident.</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h4>Work History</h4>
+        <ul>
+            <li><b>Lorem ipsum dolor sit amet,</b> 02/5/2020 <address>Lorem, ipsum dolor.</address></li>
+            <li><b>Lorem ipsum dolor sit amet,</b> 02/5/2020 <address>Lorem, ipsum dolor.</address></li>
+        </ul>
+    </div>
+    <div>
+        <h4>Education</h4>
+        <ul>
+            <li><b>Bachelor of Science: </b> Computer Science, 2017
+            <li><b>Master of Science: </b> Computer Science, 2020</li>
+        </ul>
+    </div>
+</div>
+{% endblock resume %}

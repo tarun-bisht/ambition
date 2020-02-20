@@ -1,0 +1,56 @@
+.resume .r-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.resume .r-header .info h1 {
+  color: #375265;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.resume .r-header .info .r-contact {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.resume .r-header .info .r-contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: '| ';
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+.resume .r-header .info .r-contact ul li {
+  margin-left: 0.5rem;
+}
+
+.resume .r-header .info .r-contact address {
+  margin-left: 10px;
+}
+
+.resume h4 {
+  color: #375265;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.resume h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.resume hr {
+  border: none;
+  border-top: #375265 solid 1px;
+  padding: 0.1rem;
+  border-bottom: #375265 solid 3px;
+}
+/*# sourceMappingURL=basic_wide_theme.css.map */

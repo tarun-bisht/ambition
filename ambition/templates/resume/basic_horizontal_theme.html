@@ -1,0 +1,66 @@
+{% extends "/resume_master/master.html" %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/resume/basic_horizontal_theme/basic_horizontal_theme.min.css') }}">
+{% endblock style %}
+{% block resume %}
+<div class="resume" id="resume">
+    <div class=r-header>
+        <div class="info">
+            <h1>Your Name</h1>
+            <div class="r-contact">
+                <ul>
+                    <li>xxxxxxxx35</li>
+                    <li>demo.11@gmail.com</li>
+                </ul>
+                <address>123 Main Street, India 262501</address>
+            </div>
+        </div>
+    </div>
+    <div class="r-professional-summary">
+        <h4>Professional Summary</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sapiente quidem, aliquid labore obcaecati culpa inventore pariatur non atque possimus asperiores odit adipisci, voluptatem hic commodi animi maxime praesentium dignissimos.</p>
+    </div>
+    <div class="r-skills">
+        <h4>Skills</h4>
+        <ul>
+            <li>Coding</li>
+            <li>Client/vendor relations</li>
+            <li>Marketing/product line development</li>
+            <li>Staff/training policy development</li>
+            <li>Process improvement</li>
+        </ul>   
+    </div>
+    <div class="r-work-history">
+        <h4 class="new-element-next">Work History</h4>
+        <div>
+            <div>
+                <div class="work-info">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>02/5/2020-current</p>
+                    <address>Lorem, ipsum dolor.</address>
+                </div>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque molestiae sequi adipisci corrupti facere nisi at facilis dolore quos.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quis asperiores nemo deserunt placeat explicabo sint aspernatur a dolorem? Laboriosam!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium ad officia! Nostrum sapiente omnis minima amet error, rem explicabo quia tempore iure, facere sit porro. Eius debitis voluptatem provident.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="r-education">
+        <h4 class="new-element-next">Education</h4>
+        <div>
+            <div>
+                <div class="education-info">
+                    <h5>Bachelor of Science</h5>
+                    <p>2017</p>
+                    <p>Computer Science</p>
+                </div>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque molestiae sequi adipisci corrupti facere nisi at facilis dolore quos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock resume %}
