@@ -27,3 +27,5 @@ or
 * HTML
 * SCSS
 * JavaScript
+# License 
+[MIT](https://github.com/tarun-bisht/Ambition/blob/master/LICENSE)
